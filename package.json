@@ -1,0 +1,21 @@
+{
+  "name": "nem-example",
+  "version": "1.0.0",
+  "description": "A node, express, mongoose central repo for listing and querying tv shows on different streaming platforms",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongoose-example",
+    "nem",
+    "cse3cwa"
+  ],
+  "author": "Shaarang Tanpure",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.10",
+    "nodemon": "^2.0.15"
+  }
+}
