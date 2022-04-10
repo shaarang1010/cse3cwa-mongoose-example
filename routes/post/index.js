@@ -36,4 +36,23 @@ routes.post("/add-shows", async (req, res)=>{
     })
 })
 
+
+routes.post("/find-by-name", async (req, res) => {
+  const tvShow = await TVShows.find({ name: req.body.name }).catch((err) => {
+    res.status(401).send({ error: "Error!" });
+  });
+  res.status(201).send(tvShow);
+});
+
+//find that matches params - this is a common function so you can pass more than one value
+routes.post("/find", async (req, res) => {
+  const { body } = req;
+
+  const tvShows = await TVShows.find({ body }).catch((err) => {
+    res.status(401).send({ error: "Error!" });
+  });
+  res.status(201).send(tvShows);
+});
+
+
 module.exports = routes;
