@@ -4,7 +4,8 @@
   "description": "A node, express, mongoose central repo for listing and querying tv shows on different streaming platforms",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "keywords": [
     "mongoose-example",
