@@ -12,6 +12,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
+app.use("/", routes);
+
 dotenv.config(); // initialize the the env setup
 
 db.connectDB(`${process.env.DATABASE_URL}`)
